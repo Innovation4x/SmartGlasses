@@ -3,7 +3,7 @@ import time
 import os
 
 # make sure the 'COM#' is set according the Windows Device Manager
-ser = serial.Serial('COM5', 9700, timeout=1)
+ser = serial.Serial('/dev/ttyACM0', 9700, timeout=1)
 time.sleep(2)
 
 for i in range(50):
